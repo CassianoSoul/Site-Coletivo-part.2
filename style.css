@@ -1,0 +1,43 @@
+body{
+text-align: center;
+
+}
+
+.container-botoes {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que as imagens pulem de linha se não couberem */
+    justify-content: center; /* Centraliza os botões */
+    gap: 30px; /* Espaço entre cada botão */
+    padding: 40px;
+}
+
+.item-botao {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333; /* Cor do texto */
+    text-align: center;
+    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
+    width: 150px; /* Largura de cada "botão" */
+}
+
+.item-botao img {
+    width: 100%; /* A imagem ocupa toda a largura do botão */
+    height: 150px; /* Altura fixa para ficarem iguais */
+    object-fit: cover; /* Corta a imagem para caber sem distorcer */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 3px solid #009c3b; /* Borda verde da Seleção */
+}
+
+.item-botao p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.item-botao:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+}
+
+.item-botao:hover img {
+    border-color: #ffdf00; /* Muda a borda para amarelo no hover */
+}
